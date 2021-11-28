@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0ad63258ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/nightMode/dark-mode.css" />
+    <link rel="stylesheet" href="assets/css/night-mode.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Texno Blog</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top py-2">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-6 d-flex align-items-center ps-4">
+                        <a class="hamburger d-lg-none me-4"><i class="fas fa-bars"></i></a>
+                        <a href="index.html">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-4">
+                        <ul class="icon-list d-inline-flex justify-content-end align-items-center p-0 pe-1 m-0">
+                            <li class="me-2 me-sm-3 d-flex align-items-center userIcon" data-bs-toggle="modal"
+                                href="#ModalToggle" role="button" title="Müəllif ol"><span
+                                    class="d-none d-lg-block">Müəllif ol</span> <i></i></li>
+                            <li class="night-mode-icon-li custom-control custom-switch me-2 me-sm-3"
+                                title="Gecə rejimi">
+                                <input type="checkbox" class="custom-control-input d-none" id="darkSwitch" />
+                                <label class="custom-control-label position-relative" for="darkSwitch">
+                                    <img src="assets/img/moon.svg" alt="moon"
+                                        class="night-mode-icon position-absolute top-0 left-0" />
+                                </label>
+                            </li>
+                            <li class="search-icon-li" title="Axtarış"><i class="search-icon"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 search-bar">
+                        <form action="#" method="POST">
+                            <input type="search" name="search" class="search p-0 ps-3 ps-md-4" autocomplete="off"
+                                placeholder="Axtar..." />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lineBetweenHeaders"></div>
+    </header>
+    
+    <!-- Normal header-bottom -->
+    <div class="header-bottom d-none d-sm-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 d-inline-flex justify-content-center justify-content-lg-start">
+                    <div class="nav-list d-inline-flex">
+                        <div class="item">
+                            <a href="index.html" class="cat active">ANA SƏHİFƏ</a>
+                        </div>
+                        <div class="item-drop position-relative">
+                            <div class="item">
+                                <a href="category.html" class="cat">MƏQALƏLƏR<i class="fas fa-angle-down ms-1 d-none d-lg-inline"></i></a>
+                            </div>
+                            <div class="dropdowns position-absolute">
+                                <a href="category.html" class="subcat px-3 py-2">Proqramlaşdırma</a>
+                                <a href="category.html" class="subcat px-3 py-2">IT</a>
+                            </div>
+                        </div>
+                        <div class="item-drop position-relative">
+                            <div class="item">
+                                <a href="category.html" class="cat">XƏBƏRLƏR<i class="fas fa-angle-down ms-1 d-none d-lg-inline"></i></a>
+                            </div>
+                            <div class="dropdowns position-absolute">
+                                <a href="category.html" class="subcat px-3 py-2">Yeniliklər</a>
+                                <a href="category.html" class="subcat px-3 py-2">Mobil Cihazlar</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="category.html" class="cat">TEXNİKİ TERMİNLƏR</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-0 col-lg-4 d-none d-lg-flex justify-content-end align-items-center p-0 social_subscription">
+                    <ul class="social d-inline-flex justify-content-end p-0 m-0">
+                        <li href="#" title="Facebook" style="background-color: #3B5999;">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li href="#" class="ms-2" title="Instagram" style="background-color: #E1306C;">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="ms-2" title="Twitter" style="background-color: #1DA1F2;">
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                    <button class="subscribe general-btn ms-4">Abunə ol</button>
+
+                    <form class="subscription-form input-group" method="POST" action="#">
+                        <input type="email" class="subscription-input form-control" placeholder="Elektron ünvanınız..."
+                            autocomplete="off" />
+                        <button class="confirm-button general-btn" type="submit">Təsdiqlə</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- header-bottom for owl-carousel -->
+    <div class="header-bottom d-sm-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="nav-list owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="index.html" class="cat active">ANA SƏHİFƏ</a>
+                        </div>
+                        <div class="item">
+                            <a href="category.html" class="cat">MƏQALƏLƏR<i class="fas fa-angle-down ms-1 d-none d-lg-inline"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="category.html" class="cat">XƏBƏRLƏR<i class="fas fa-angle-down ms-1 d-none d-lg-inline"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="category.html" class="cat">TEXNİKİ TERMİNLƏR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="pt-3 p-4 d-flex flex-column justify-content-between d-lg-none">
+        <div>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <div class="logo2"></div>
+                </a>
+                <a class="closeSideBar"><i class="fas fa-times"></i></a>
+            </div>
+
+            <hr class="mb-2" />
+
+            <div class="sideBarMenu">
+                <ul class="p-0">
+                    <li class="active"><a class="me-2" href="index.html"><i class="fas fa-home"></i></a>
+                        <a href="index.html" class="nameOfPage">Ana Səhifə</a>
+                    </li>
+                    <li data-bs-toggle="collapse" href="#sideBarCollapse1" role="button" aria-expanded="false"
+                        aria-controls="sideBarCollapse1" class="articles">
+                        <a class="me-2"><i class="plus plus1"></i></a>
+                        <a href="category.html" class="nameOfPage">Məqalələr</a>
+                    </li>
+                    <ul class="collapse collapsibleMenu" id="sideBarCollapse1">
+                        <li><a href="category.html">Proqramlaşdırma</a></li>
+                        <li><a href="category.html">IT</a></li>
+                    </ul>
+                    <li data-bs-toggle="collapse" href="#sideBarCollapse2" role="button" aria-expanded="false"
+                        aria-controls="sideBarCollapse2" class="news">
+                        <a class="me-2"><i class="plus plus2"></i></a>
+                        <a href="category.html" class="nameOfPage">Xəbərlər</a>
+                    </li>
+                    <ul class="collapse collapsibleMenu" id="sideBarCollapse2">
+                        <li><a href="category.html">Yeniliklər</a></li>
+                        <li><a href="category.html">Mobil Cihazlar</a></li>
+                    </ul>
+                    <li data-bs-toggle="modal" href="#ModalToggle" role="button"><a class="me-2" href="#">
+                            <i class="fas fa-user-edit"></i></a><a class="nameOfPage">Müəllif ol</a>
+                    </li>
+                    <!-- <li><a class="me-2" href="#"><i class="fas fa-phone-volume"></i></a><span><a href="#">Əlaqə</a></span>
+                </li>
+                <li><a class="me-2" href="#"><i class="fas fa-address-card"></i></a><span><a
+                            href="#">Haqqımızda</a></span></i></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <hr class="mt-0 mb-2" />
+
+            <div class="followUs">
+                <h2 class="mb-3">Bizə Abunə Olun</h2>
+
+                <ul class="social d-inline-flex justify-content-between align-items-center position-relative p-0 m-0">
+                    <li href="#" title="Facebook" style="background-color: #3B5999;">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li href="#" class="ms-2" title="Instagram" style="background-color: #E1306C;">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="ms-2" title="Twitter" style="background-color: #1DA1F2;">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <button class="subscribe general-btn px-3 py-2 ms-4">Abunə ol</button>
+
+                    <form class="subscription-form subscription-form-aside input-group w-100 h-100" method="POST"
+                        action="#">
+                        <input type="email" class="subscription-input form-control" placeholder="Elektron ünvanınız..."
+                            autocomplete="off" />
+                        <button class="confirm-button general-btn position-relative" type="submit">
+                            <i class="fas fa-check position-absolute top-50 left-50"
+                                style="transform: translate(-50%, -50%);"></i>
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <div class="move-to-top">
+        <button class="move-to-top-button general-btn"><i class="fas fa-chevron-up"></i></button>
+    </div>
+
+    <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalToggleLabel">Müəllif ol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form action="#" method="POST">
+                        <input type="text" name="firstLast" placeholder="Ad və soyad" autocomplete="off" required />
+                        <input type="text" name="username" placeholder="İxtisas" autocomplete="off" required />
+                        <input type="email" name="mail" placeholder="E-poçt" autocomplete="off" required />
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" id="agreement" class="m-0" required />
+                            <label for="agreement"> <a href="#" class="acceptRules">Müəllif şərtlərini</a> qəbul
+                                edirəm.</label>
+                        </div>
+                        <button>Müraciət et</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+               <button> <i class="fab fa-facebook-square"></i> <span class="ms-2">FACEBOOK ilə daxil ol</span> </button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <section class="containerOfMainPhotos container rounded mt-3 mb-5 my-lg-5">
+        <!-- For large screens -->
+        <div class="row justify-content-center d-none d-lg-flex">
+            <div class="col-6 mainPhotos pe-1">
+                <article>
+                    <div>
+                        <img src="assets/img/windows11.jpg" alt="windows_11" />
+                        <a href="articles.html">
+                            <div class="backgroundOfMainPhotos"></div>
+                            <h3 id="first_h3OfMainPhotos">Windows 11 Sistem Tələbləri Nələrdir</h3>
+                            <div class="author_dateOfMainPhotos d-flex flex-column flex-xxl-row"
+                                id="firstAuthor_dateOfMainPhotos">
+                                <span class="p-0 pe-xxl-3"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                                <span class="p-0 ps-xxl-3"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-3 mainPhotos px-1">
+                <article>
+                    <div>
+                        <img src="assets/img/coding_for_kids.jpg" alt="coding_for_kids" />
+                        <a href="articles.html">
+                            <div class="backgroundOfMainPhotos"></div>
+                            <h3>Uşaqların Kodlaşdırma Öyrənməsi Üçün 3 Veb Sayt</h3>
+                            <div class="author_dateOfMainPhotos d-flex flex-column flex-xxl-row">
+                                <span class="p-0 pe-xxl-2"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                                <span class="p-0 ps-xxl-2"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-3 mainPhotos ps-1" id="mainPhotos3">
+                <article class="pb-1">
+                    <div>
+                        <img src="assets/img/captcha.jpg" alt="reCaptcha" />
+                        <a href="articles.html">
+                            <div class="backgroundOfMainPhotos"></div>
+                            <h3>reCAPTHCA Nədir</h3>
+                            <div class="author_dateOfMainPhotos d-flex flex-column flex-xxl-row">
+                                <span class="p-0 pe-xxl-1"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                                <span class="p-0 ps-xxl-1"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <article class="pt-1">
+                    <div>
+                        <img src="assets/img/user_interface.jpg" alt="user_interface" />
+                        <a href="articles.html">
+                            <div class="backgroundOfMainPhotos"></div>
+                            <h3>Dürdanə Kimdir</h3>
+                            <div class="author_dateOfMainPhotos d-flex flex-column flex-xxl-row">
+                                <span class="p-0 pe-xxl-1"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                                <span class="p-0 ps-xxl-1"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- For mobile devices -->
+        <div id="containerOfMainPhotosSlider" class="carousel slide d-lg-none" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#containerOfMainPhotosSlider" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#containerOfMainPhotosSlider" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#containerOfMainPhotosSlider" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#containerOfMainPhotosSlider" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <a href="articles.html"><img src="assets/img/windows11.jpg" class="d-block w-100 h-100"
+                            alt="windows_11" /></a>
+                    <div class="carousel-caption w-100 start-0">
+                        <h5><a href="articles.html">Windows 11 Sistem Tələbləri Nələrdir</a></h5>
+                        <p class="mb-1">
+                            <span class="pe-3"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                            <span class="ps-3"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <a href="articles.html"><img src="assets/img/kids.jpg" class="d-block w-100 h-100"
+                            alt="coding_for_kids" /></a>
+                    <div class="carousel-caption w-100 start-0">
+                        <h5><a href="articles.html">Uşaqların Kodlaşdırma Öyrənməsi Üçün 3 Veb Sayt</a></h5>
+                        <p class="mb-1">
+                            <span class="pe-3"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                            <span class="ps-3"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <a href="articles.html"><img src="assets/img/captcha.jpg" class="d-block w-100 h-100"
+                            alt="reCAPTHCA" /></a>
+                    <div class="carousel-caption w-100 start-0">
+                        <h5><a href="articles.html">reCAPTHCA Nədir</a></h5>
+                        <p class="mb-1">
+                            <span class="pe-3"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                            <span class="ps-3"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <a href="articles.html"><img src="assets/img/user_interface.jpg" class="d-block w-100 h-100"
+                            alt="user_interface" /></a>
+                    <div class="carousel-caption w-100 start-0">
+                        <h5><a href="articles.html">Dürdanə Kimdir</a></h5>
+                        <p class="mb-1">
+                            <span class="pe-3"><a href="author.html">Müəllif: Dürdanə Tükəzbanova</a></span>
+                            <span class="ps-3"><i class="fas fa-calendar-alt me-2"></i>2002-08-16</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#containerOfMainPhotosSlider"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#containerOfMainPhotosSlider"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="container mb-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-7 mb-4 mb-lg-0 recent-news">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="captionDiv d-flex">
+                                <h2 class="caption px-4 pt-2 pb-1 m-0">Ən son xəbərlər</h2>
+                                <div class="triangle"></div>
+                            </div>
+                            <div class="lineUnderCaption w-100"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center align-items-sm-stretch mb-3">
+                        <a href="articles.html"><img src="assets/img/scratch.png" alt="photo"></a>
+                        <div class="d-flex flex-column justify-content-around w-100 ms-4">
+                            <a href="category.html"> <span class="categories"> <i class="far fa-dot-circle"></i> <b>
+                                        Yeniliklər</b></span></a>
+                            <a href="articles.html" class="news-header">Scratch nədir?</a>
+                            <div class="d-flex justify-content-between"><a href="author.html"
+                                    class="author">TexnoBlog</a><span class="calendar"><i
+                                        class="far fa-calendar-alt"></i> 5.09.2021</span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center align-items-sm-stretch mb-3">
+                        <a href="articles.html"><img src="assets/img/wp.jpg" alt="photo"></a>
+                        <div class="d-flex flex-column justify-content-around w-100 ms-4">
+                            <a href="category.html"> <span class="categories"> <i class="far fa-dot-circle"></i> <b>
+                                        Mobil Cihazlar</b></span></a>
+                            <a href="articles.html" class="news-header">Dünyada telefon istifadəsi və mobil data
+                                statistikası</a>
+                            <div class="d-flex justify-content-between"><a href="author.html"
+                                    class="author">TexnoBlog</a><span class="calendar"><i
+                                        class="far fa-calendar-alt"></i> 5.09.2021</span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center align-items-sm-stretch mb-3">
+                        <a href="articles.html"><img src="assets/img/wp.jpg" alt="photo"></a>
+                        <div class="d-flex flex-column justify-content-around w-100 ms-4">
+                            <a href="category.html"> <span class="categories"> <i class="far fa-dot-circle"></i> <b>
+                                        Yeniliklər</b></span></a>
+                            <a href="articles.html" class="news-header">Dünyada telefon istifadəsi və mobil data
+                                statistikası</a>
+                            <div class="d-flex justify-content-between"><a href="author.html"
+                                    class="author">TexnoBlog</a><span class="calendar"><i
+                                        class="far fa-calendar-alt"></i> 5.09.2021</span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center align-items-sm-stretch mb-3">
+                        <a href="articles.html"><img src="assets/img/wp.jpg" alt="photo"></a>
+                        <div class="d-flex flex-column justify-content-around w-100 ms-4">
+                            <a href="category.html"> <span class="categories"> <i class="far fa-dot-circle"></i> <b>
+                                        Mobil Cihazlar</b></span></a>
+                            <a href="articles.html" class="news-header">Dünyada telefon istifadəsi və mobil data
+                                statistikası</a>
+                            <div class="d-flex justify-content-between"><a href="author.html"
+                                    class="author">TexnoBlog</a><span class="calendar"><i
+                                        class="far fa-calendar-alt"></i> 5.09.2021</span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center align-items-sm-stretch mb-3">
+                        <a href="articles.html"><img src="assets/img/captcha.jpg" alt="photo" alt="w3c"></a>
+                        <div class="d-flex flex-column justify-content-around w-100 ms-4">
+                            <a href="category.html"> <span class="categories"> <i class="far fa-dot-circle"></i> <b>
+                                        Yeniliklər</b></span></a>
+                            <a href="articles.html" class="news-header">reCAPTHCA nədir?</a>
+                            <div class="d-flex justify-content-between"><a href="author.html"
+                                    class="author">TexnoBlog</a><span class="calendar"><i
+                                        class="far fa-calendar-alt"></i> 5.09.2021</span></div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="captionDiv d-flex">
+                                <h2 class="caption px-4 pt-2 pb-1 m-0">Ən çox oxunanlar</h2>
+                                <div class="triangle"></div>
+                            </div>
+                            <div class="lineUnderCaption w-100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-5" id="latest-news">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="border-0 d-flex flex-column">
+                                <a href="articles.html" class="mb-4">Süni İntellekt(AI) Səhiyyə Sahəsini Nece Inkişaf
+                                    Etdirir?</a>
+                                <a href="category.html"><span class="categories"><b>Proqramlaşdırma</b></span></a>
+                            </div>
+                            <a href="articles.html"><img src="assets/img/wp.jpg" alt="photo"></a>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="border-0 d-flex flex-column">
+                                <a href="articles.html" class="mb-4">Süni İntellekt(AI) Səhiyyə Sahəsini Nece Inkişaf
+                                    Etdirir?</a>
+                                <a href="category.html"><span class="categories"><b>IT</b></span></a>
+                            </div>
+                            <a href="articles.html"><img src="assets/img/windows11.jpg" alt="photo"></a>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="border-0 d-flex flex-column">
+                                <a href="articles.html" class="mb-4">Süni İntellekt(AI) Səhiyyə Sahəsini Nece Inkişaf
+                                    Etdirir?</a>
+                                <a href="category.html"><span class="categories"><b>Proqramlaşdırma</b></span></a>
+                            </div>
+                            <a href="articles.html"><img src="assets/img/wp.jpg" alt="photo"></a>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="border-0 d-flex flex-column">
+                                <a href="articles.html" class="mb-4">Süni İntellekt(AI) Səhiyyə Sahəsini Nece Inkişaf
+                                    Etdirir?</a>
+                                <a href="category.html"><span class="categories"><b>IT</b></span></a>
+                            </div>
+                            <a href="articles.html"><img src="assets/img/windows11.jpg" alt="photo"></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="captionDiv d-flex">
+                                    <h2 class="caption px-4 pt-2 pb-1 m-0">Ən çox axtarlanlar</h2>
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="lineUnderCaption w-100"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center" id="most-searched">
+                            <a href="#"><i class="fas fa-search"></i> Bitcoin</a>
+                            <a href="#"><i class="fas fa-search"></i> Windows 11</a>
+                            <a href="#"><i class="fas fa-search"></i> Mobil Data</a>
+                            <a href="#"><i class="fas fa-search"></i> VPN</a>
+                            <a href="#"><i class="fas fa-search"></i> PHP</a>
+                            <a href="#"><i class="fas fa-search"></i> Scratch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technical-terms container my-5">
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="captionDiv d-flex">
+                    <h2 class="caption px-4 pt-2 pb-1 m-0">Texniki Terminlər</h2>
+                    <div class="triangle"></div>
+                </div>
+                <div class="lineUnderCaption w-100"></div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <article class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/hardware.jpg" class="card-img-top" alt="hardware" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Hardware Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p class="card-text">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/graphical_user_interface.jpg" class="card-img-top"
+                            alt="graphical_user_interface" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Graphical User Interface (GUI) Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p class="card-text">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/hardware.jpg" class="card-img-top" alt="hardware" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Hardware Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p class="card-text">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/graphical_user_interface.jpg" class="card-img-top"
+                            alt="graphical_user_interface" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Graphical User Interface (GUI) Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p class="card-text">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="captionDiv d-flex">
+                    <h2 class="caption px-4 pt-2 pb-1 m-0">Məqalələr</h2>
+                    <div class="triangle"></div>
+                </div>
+                <div class="lineUnderCaption w-100"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <article class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/graphical_user_interface.jpg" class="card-img-top"
+                            alt="graphical_user_interface" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Graphical User Interface (GUI) Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p
+                                class="card-text d-flex justify-content-between flex-sm-column flex-md-row flex-lg-column flex-xl-row">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                                <a href="category.html"><span class="categories"><b>IT</b></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/hardware.jpg" class="card-img-top" alt="hardware" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Hardware Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p
+                                class="card-text d-flex justify-content-between flex-sm-column flex-md-row flex-lg-column flex-xl-row">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                                <a href="category.html"><span class="categories"><b>Proqramlaşdırma</b></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/graphical_user_interface.jpg" class="card-img-top"
+                            alt="graphical_user_interface" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Graphical User Interface (GUI) Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p
+                                class="card-text d-flex justify-content-between flex-sm-column flex-md-row flex-lg-column flex-xl-row">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                                <a href="category.html"><span class="categories"><b>IT</b></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100">
+                    <a href="articles.html" class="position-relative">
+                        <img src="assets/img/hardware.jpg" class="card-img-top" alt="hardware" />
+                        <div class="backgroundOfCardImg position-absolute top-0 w-100 h-100"></div>
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><a href="articles.html">Hardware Nədir?</a></h5>
+                        <div>
+                            <a href="author.html" class="author">TexnoBlog</a>
+                            <p
+                                class="card-text d-flex justify-content-between flex-sm-column flex-md-row flex-lg-column flex-xl-row">
+                                <small class="text-muted"><i class="far fa-calendar-alt me-2"></i>2021-09-09</small>
+                                <a href="category.html"><span class="categories"><b>Proqramlaşdırma</b></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid ">
+            <div class="row justify-content-between">
+                <div class=" col-12 ps-md-5 col-lg-3 col-md-3 pt-4">
+                    <h3 class="mb-3">Kateqoriyalar</h3>
+                    <div class="d-flex">
+                        <ul>
+                            <li> <a href="category.html">Məqalələr</a></li>
+                            <li> <a href="category.html">Xəbərlər</a></li>
+                            <li> <a href="category.html">Texniki terminlər</a></li>
+                            <li> <a href="category.html">Proqramlaşdırma</a></li>
+                            <li> <a href="category.html">IT</a></li>
+                            <li> <a href="category.html">Yeniliklər</a></li>
+                            <li> <a href="category.html">Mobil Cihazlar</a></li>
+                            <!-- <li> <a href="#">Haqqımızda</a></li>
+                                <li> <a href="#">Əlaqə</a></li> -->
+                        </ul>
+                        <!-- <ul>
+                                <li> <a href="category.html">Proqramlaşdırma</a></li>
+                                <li> <a href="category.html">IT</a></li>
+                                <li> <a href="category.html">Mobil Cihazlar</a></li>
+                            </ul> -->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-3 m-md-0 pt-md-4">
+                    <h3 class="mb-3">Qəzet</h3>
+                    <form action="#" method="POST">
+                        <span><i class="far fa-envelope"></i></span><input type="mail" name="mail"
+                            placeholder="E-poçtunuz" autocomplete="off" />
+                        <button class="general-btn"><i class="far fa-paper-plane "></i> <span class="ms-4">Abunə ol</span></button>
+                    </form>
+                </div>
+                <div class="col-3  d-none d-lg-block pt-4 ">
+                    <h3 class="mb-3">Son paylaşımlar</h3>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <a href="articles.html"><img src="assets/img/w3c.jpg" alt="w3c"></a>
+                            <div class="d-flex flex-column ">
+                                <span class="calendar"><i class="far fa-calendar-alt"></i> <b> 5.09.2021</b></span>
+                                <a href="articles.html">W3C Nədir?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <a href="articles.html"><img src="assets/img/scratch.png" alt="scratch"></a>
+                            <div class="d-flex flex-column ">
+                                <span class="calendar"><i class="far fa-calendar-alt"></i> <b> 5.09.2021</b></span>
+                                <a href="articles.html">Scratch Nədir?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12  pe-md-5 col-lg-3 col-md-4 pt-4 ps-4 footer-about d-flex flex-column align-items-center ">
+                    <img src="assets/img/logo/logo_night.png" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel quas, odio tenetur iusto
+                        autem laudantium minus ab nesciunt totam earum nobis omnis temporibus, illum quo sequi eius, id
+                        tempore!</p>
+                    <ul class="text-center">
+                        <li><a href="#" style="background-color: #3B5999;"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" style="background-color: #E1306C;"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" style="background-color: #1DA1F2;"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="row copyright text-center p-3">
+                    <p>© Texno Blog 2018-2021</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- <div class="disableAll"></div> This part disables all when sidebar is popped up -->
+
+
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/nightMode/dark-mode-switch.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

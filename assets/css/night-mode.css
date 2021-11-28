@@ -1,0 +1,162 @@
+/* This css file is only for style of some elements in dark mode  */
+
+[data-theme="dark"] .logo {
+    background-image: url("../img/logo/logo_night.png");
+}
+
+[data-theme="dark"] .header-top, [data-theme="dark"] aside {
+    background-color: var(--extremelyDarkSiteColor);
+}
+
+[data-theme="dark"] .icon-list li i, [data-theme="dark"] .icon-list .userIcon span,
+[data-theme="dark"] .header-top .hamburger i, [data-theme="dark"] .authorSection .authorInfo a,
+[data-theme="dark"] .nav-list .item a, [data-theme="dark"] .nav-list .dropdowns a, [data-theme="dark"] aside h2,
+[data-theme="dark"] aside .closeSideBar i, [data-theme="dark"] aside .sideBarMenu a.me-2 i,
+[data-theme="dark"] aside .sideBarMenu li a.nameOfPage, [data-theme="dark"] aside .sideBarMenu .collapsibleMenu li a,
+[data-theme="dark"] .captionDiv .caption, [data-theme="dark"] .technical-terms article .card-title a,
+[data-theme="dark"] .dropdownsOfHeader div a, [data-theme="dark"] .authorSection .authorInfo h2,
+[data-theme="dark"] .categorySection .categoryInfo h2, [data-theme="dark"] .categorySection .categoryInfo p,
+[data-theme="dark"] .news-header, [data-theme="dark"] #latest-news a, [data-theme="dark"] .latest-category-news a,
+[data-theme="dark"] #latest-articles a:not(a.a_category), [data-theme="dark"] .breadcrumb-item a {
+    color: var(--lightSiteColor);
+}
+
+[data-theme="dark"] aside .sideBarMenu a.me-2 .plus.minus::before, [data-theme="dark"] .tags ul li a,
+[data-theme="dark"] .related a {
+    color: var(--white) !important;
+}
+
+
+[data-theme="dark"] .search-icon.times::before, [data-theme="dark"] .search,
+[data-theme="dark"] .subscription-input, [data-theme="dark"] .subscription-input:focus {
+    color: var(--extremelyDarkSiteColor);
+}
+
+[data-theme="dark"] .search, [data-theme="dark"] .nav-list .dropdowns, [data-theme="dark"] .nav-list .item,
+[data-theme="dark"] .subscription-input, [data-theme="dark"] .subscription-input:focus, 
+[data-theme="dark"] .containerOfMainPhotos .mainPhotos img, [data-theme="dark"] #containerOfMainPhotosSlider .carousel-item {
+    border-color: var(--lightSiteColor);
+}
+
+[data-theme="dark"] .modal-content {
+    background-color: var(--darkGray);
+}
+
+[data-theme="dark"] .lineBetweenHeaders {
+    background: linear-gradient(to right, var(--hoverColorNight), var(--siteColor), var(--lightSiteColor), var(--siteColor), var(--hoverColorNight));
+}
+
+[data-theme="dark"] .header-bottom, [data-theme="dark"] .nav-list .dropdowns, [data-theme="dark"] .captionDiv .caption,
+[data-theme="dark"] .lineUnderCaption, [data-theme="dark"] .technical-terms .card,
+[data-theme="dark"] .dropdownsOfHeader div, [data-theme="dark"] .authorSection,
+[data-theme="dark"] .categorySection, [data-theme="dark"] .tags ul li:nth-child(1) {
+    background-color: var(--darkSiteColor);
+}
+
+[data-theme="dark"] .header-bottom {
+    border-bottom-color: var(--lightSiteColor);
+}
+
+[data-theme="dark"] .nav-list .item a.cat.active, [data-theme="dark"] aside .sideBarMenu li.active a.me-2 i,
+[data-theme="dark"] aside .sideBarMenu li.active span a, [data-theme="dark"] .signUp, [data-theme="dark"] .signIn,
+[data-theme="dark"] #ModalToggle .modal-title, [data-theme="dark"] .categorySection .categoryInfo p span,
+[data-theme="dark"] #ModalToggle .modal-body a.acceptRules {
+    color: var(--hoverColorNight);
+}
+
+[data-theme="dark"] .owl-dots span {
+    background-color: var(--lightSiteColorOpaque) !important;
+}
+
+[data-theme="dark"] .owl-dots .active span, [data-theme="dark"] .containerOfMainPhotos .mainPhotos img,
+[data-theme="dark"] aside hr, [data-theme="dark"] #containerOfMainPhotosSlider .carousel-item {
+    background-color: var(--lightSiteColor) !important;
+}
+
+[data-theme="dark"] .general-btn, [data-theme="dark"] #ModalToggle .modal-body button,
+[data-theme="dark"] #ModalToggle .modal-footer button {
+    background-color: var(--hoverColorNight);
+}
+
+[data-theme="dark"] .general-btn, [data-theme="dark"] .general-btn i,
+[data-theme="dark"] #ModalToggle .modal-body button, [data-theme="dark"] #ModalToggle .modal-footer button {
+    color: var(--darkGray);
+}
+
+[data-theme="dark"] #ModalToggle input {
+    color: #000000;
+}
+
+[data-theme="dark"] .captionDiv .triangle {
+    border-top: solid 4px var(--darkSiteColor);
+    border-left: solid 4px var(--darkSiteColor);
+}
+
+[data-theme="dark"] .move-to-top-button {
+    background-color: var(--hoverColorNightOpaque);
+    color: var(--extremelyDarkSiteColor);
+}
+
+[data-theme="dark"] #ModalToggle .btn-close {
+    background-image: url("../img/close_btn_dark_mode.png");
+    opacity: 0.8;
+}
+
+[data-theme="dark"] #ModalToggle .modal-body a {
+    color: rgb(225, 225, 225);
+}
+
+@media only screen and (max-width:991.5px) {
+    [data-theme="dark"] .logo, [data-theme="dark"] .logo2 {
+        background-image: url("../img/logo/logo_compressed_night.png");
+    }
+}
+
+@media only screen and (max-width:575.5px) {
+    [data-theme="dark"] .nav-list .item a {
+        border-right-color: var(--lightSiteColor);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    [data-theme="dark"] .move-to-top-button:hover {
+        background-color: var(--hoverColorNight);
+        color: var(--darkGray);
+    }
+
+    [data-theme="dark"] .nav-list .item a.cat:hover, [data-theme="dark"] .nav-list .dropdowns .subcat:hover {
+        color: var(--hoverColorNight);
+    }
+
+    [data-theme="dark"] .containerOfMainPhotos .mainPhotos article > div:hover .backgroundOfMainPhotos,
+    [data-theme="dark"] .technical-terms article .backgroundOfCardImg:hover {
+        background-color: var(--extremelyDarkSiteColorOpaque);
+    }
+
+    [data-theme="dark"] .news-header:hover, [data-theme="dark"] .technical-terms article .card-title a:hover {
+        color: var(--hoverColorNight);
+    }
+
+    [data-theme="dark"] .author:hover {
+        color: var(--white);
+    }
+
+    [data-theme="dark"] #ModalToggle .btn-close:hover {
+        opacity: 1;
+    }
+}
+
+@media (hover: none) and (pointer: coarse), (pointer: fine) {
+    [data-theme="dark"] .move-to-top-button:active {
+        background-color: var(--hoverColorNight);
+        color: var(--darkGray);
+    }
+
+    [data-theme="dark"] .news-header:active, [data-theme="dark"] .technical-terms article .card-title a:hover {
+        color: var(--hoverColorNight);
+    }
+
+    [data-theme="dark"] .author:active {
+        color: var(--white);
+    }
+}
